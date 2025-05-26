@@ -1,5 +1,5 @@
 {
-  "name": "ruvents/codestyle",
+  "name": "frogbarbarian/codestyle",
   "license": "MIT",
   "description": "Корпоративный стандарт оформления кода.",
   "type": "phpcodesniffer-standard",
