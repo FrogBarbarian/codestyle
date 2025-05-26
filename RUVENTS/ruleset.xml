@@ -76,7 +76,6 @@
     <rule ref="Generic.Formatting.SpaceAfterCast"/>
     <rule ref="Generic.Formatting.SpaceBeforeCast"/>
     <rule ref="Generic.Formatting.SpaceAfterNot"/>
-    <rule ref="Generic.Functions.CallTimePassByReference"/>
     <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
     <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
     <rule ref="Generic.Metrics.CyclomaticComplexity">
@@ -258,7 +257,6 @@
     <rule ref="Squiz.Classes.ClassFileName">
         <exclude-pattern>*/migrations/*</exclude-pattern>
     </rule>
-    <rule ref="Squiz.Classes.DuplicateProperty"/>
     <rule ref="Squiz.Classes.LowercaseClassKeywords"/>
     <rule ref="Squiz.Classes.SelfMemberReference"/>
     <rule ref="Squiz.Classes.ValidClassName">
@@ -332,9 +330,7 @@
     <rule ref="Squiz.NamingConventions.ValidVariableName">
         <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
     </rule>
-    <rule ref="Squiz.Objects.DisallowObjectStringIndex"/>
     <!--<rule ref="Squiz.Objects.ObjectInstantiation"/>-->
-    <rule ref="Squiz.Objects.ObjectMemberComma"/>
     <rule ref="Squiz.Operators.ComparisonOperatorUsage">
         <exclude name="Squiz.Operators.ComparisonOperatorUsage.ImplicitTrue"/>
     </rule>
@@ -397,7 +393,6 @@
             <property name="ignoreNewlines" type="bool" value="true"/>
         </properties>
     </rule>
-    <rule ref="Squiz.WhiteSpace.PropertyLabelSpacing"/>
     <rule ref="Squiz.WhiteSpace.ScopeClosingBrace"/>
     <rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
     <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
