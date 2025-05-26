@@ -384,7 +384,7 @@
             <property name="spacingAfterLast" type="int" value="0"/>
         </properties>
     </rule>
-    <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
+    <rule ref="Generic.WhiteSpace.LanguageConstructSpacing"/>
     <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
     <rule ref="Squiz.WhiteSpace.MemberVarSpacing">
         <properties>
@@ -410,6 +410,10 @@
     <rule ref="SlevomatCodingStandard.Functions">
         <!-- Рано такое делать. IDEA/PhpStorm не умеют форматировать такие... -->
         <exclude name="SlevomatCodingStandard.Functions.TrailingCommaInCall.MissingTrailingComma"/>
+        <!--Некоторые функции нельзя укоротить до 20 строк, а разбивать их - бессмыслица-->
+        <exclude name="SlevomatCodingStandard.Functions.FunctionLength.FunctionLength"/>
+        <!--Противоречит другому правилу многострочного вызова, при этом на однострочном вызове все равно будет ошибка, напоминающая о лишней запятой-->
+        <exclude name="SlevomatCodingStandard.Functions.DisallowTrailingCommaInCall.DisallowedTrailingComma"/>
     </rule>
 
     <rule ref="Zend.Files.ClosingTag">
